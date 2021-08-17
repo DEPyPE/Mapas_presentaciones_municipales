@@ -38,6 +38,10 @@ body{
 	color: rgba(255, 255, 255, 1) !important;
 }
 
+.collection-margin-left{
+    margin-left: 100px !important;
+}
+
 .notas-datos{
     color: rgba(255, 255, 255, 1) !important;
 	position: absolute;
