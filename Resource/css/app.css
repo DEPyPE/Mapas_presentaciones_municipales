@@ -1,0 +1,344 @@
+
+body{
+	background-color: rgb(240, 240, 240);
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.card-map{
+    background-color: rgba(255, 255, 255, 1) !important;
+	position: fixed !important;
+	height: 650px !important;
+	width: 902px !important;
+}
+
+#mapa_guanajuato {
+	width: 100%;
+	height: 550px;
+}
+
+/* Collection component styles */
+.collection{
+	box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%) !important;
+}
+
+.collection .collection-item{
+	padding: 10px 10px !important;
+}
+
+.collection .collection-item:hover{
+	background-color: rgb(245, 245, 245);
+	cursor: pointer;
+}
+
+.collection-item-active{
+	background-color: rgb(220, 220, 220) !important;
+}
+
+.label-SantaCruzDeJuventinoRosas1{
+	color: rgba(255, 255, 255, 1) !important;
+}
+
+.notas-datos{
+    color: rgba(255, 255, 255, 1) !important;
+	position: absolute;
+	width: 250px;
+	font-size: 9px;
+	bottom: 10px;
+	right: 20px;
+	text-align: justify;
+}
+
+.label-Abasolo, .label-Acambaro, .label-ApaseoElAlto, .label-ApaseoElGrande,
+.label-Atarjea, .label-Celaya, .label-Comonfort, .label-Coroneo, .label-Cortazar,
+.label-Cueramaro, .label-DoctorMora, .label-DoloresHidalgo, .label-Guanajuato,
+.label-Huanimaro, .label-Irapuato, .label-JaralDelProgreso, .label-Jerecuaro,
+.label-Leon, .label-ManuelDoblado, .label-Moroleon, .label-Ocampo, .label-Penjamo,
+.label-PuebloNuevo, .label-PurisimaDelRincon, .label-Romita, .label-Salamanca,
+.label-Salvatierra, .label-SanDiegoDeLaUnion, .label-SanFelipe, .label-SanFrancisco,
+.label-SanJoseIturbide, .label-SanLuisDeLaPaz, .label-SanMiguelDeAllende,
+.label-SantaCatarina, .label-SantaCruzDeJuventinoRosas, .label-SantiagoMaravatio,
+.label-Silao, .label-Tarandacuao, .label-Tarimoro, .label-TierraBlanca, .label-Uriangato,
+.label-ValleDeSantiago, .label-Victoria, .label-Villagran, .label-Xichu, .label-Yuriria{
+	position: absolute;
+	z-index: 10;
+	font-size: 12px;
+	color: black;
+}
+
+.label-Ocampo{
+    top: 155px;
+    left: 270px;
+    font-size: 12px;
+}
+
+.label-SanFelipe{
+	top: 180px;
+    left: 348px;
+    font-size: 12px;
+}
+
+.label-SanDiegoDeLaUnion{
+    top: 180px;
+    left: 430px;
+    font-size: 12px;
+}
+
+.label-SanLuisDeLaPaz{
+    top: 200px;
+    left: 540px;
+    font-size: 12px;
+}
+
+.label-Victoria{
+	top: 212px;
+    left: 610px;
+    font-size: 12px;
+}
+
+.label-Xichu{
+    top: 220px;
+    left: 685px;
+    font-size: 12px;
+}
+
+.label-Atarjea{
+	top: 242px;
+    left: 727px;
+    font-size: 12px;
+}
+
+.label-Leon{
+	top: 280px;
+    left: 230px;
+    font-size: 12px;
+}
+
+.label-Silao{
+	top: 330px;
+    left: 290px;
+    font-size: 12px;
+}
+
+.label-Guanajuato{
+	top: 315px;
+    left: 324px;
+    font-size: 12px;
+}
+
+.label-DoloresHidalgo{
+    top: 260px;
+    left: 396px;
+    font-size: 11px;
+}
+
+.label-SanMiguelDeAllende{
+	top: 323px;
+    left: 465px;
+    font-size: 12px;
+}
+
+.label-SanJoseIturbide{
+    top: 310px;
+    left: 565px;
+    font-size: 12px;
+}
+
+.label-DoctorMora{
+    top: 279px;
+    left: 565px;
+    font-size: 10px;
+}
+
+.label-TierraBlanca{
+	top: 300px;
+    left: 630px;
+    font-size: 12px;
+}
+
+.label-SantaCatarina{
+    top: 262px;
+    left: 652px;
+    font-size: 10px;
+}
+
+.label-PurisimaDelRincon{
+	top: 334px;
+    left: 113px;
+    font-size: 11px;
+}
+
+.label-SanFrancisco{
+	top: 327px;
+    left: 169px;
+    font-size: 10px;
+}
+
+.label-Romita{
+    top: 363px;
+    left: 235px;
+    font-size: 12px;
+}
+
+.label-Irapuato{
+    top: 400px;
+    left: 296px;
+    font-size: 12px;
+}
+
+.label-Salamanca{
+    top: 428px;
+    left: 345px;
+    font-size: 12px;
+}
+
+.label-Penjamo{
+	top: 485px;
+    left: 175px;
+    font-size: 12px;
+}
+
+.label-ValleDeSantiago{
+	top: 485px;
+    left: 330px;
+    font-size: 12px;
+}
+
+.label-Celaya{
+    top: 444px;
+    left: 450px;
+    font-size: 12px;
+}
+
+.label-ManuelDoblado{
+	top: 388px;
+    left: 158px;
+    font-size: 12px;
+}
+
+.label-Cueramaro{
+    top: 424px;
+    left: 210px;
+    font-size: 11px;
+}
+
+.label-Abasolo{
+    top: 470px;
+    left: 260px;
+    font-size: 12px;
+}
+
+.label-Huanimaro{
+    top: 499px;
+    left: 266px;
+    font-size: 11px;
+}
+
+.label-Comonfort{
+    top: 392px;
+    left: 449px;
+    font-size: 12px;
+}
+
+.label-ApaseoElAlto{
+    top: 430px;
+    left: 510px;
+    font-size: 11px;
+}
+
+.label-ApaseoElGrande{
+    top: 476px;
+    left: 515px;
+    font-size: 10px;
+}
+
+.label-Jerecuaro{
+    top: 540px;
+    left: 520px;
+    font-size: 12px;
+}
+
+.label-Acambaro{
+	top: 585px;
+    left: 465px;
+    font-size: 12px;
+}
+
+.label-Yuriria{
+	top: 540px;
+    left: 345px;
+    font-size: 12px;
+}
+
+.label-Salvatierra{
+	top: 536px;
+    left: 411px;
+    font-size: 11px;
+}
+
+.label-Tarimoro{
+	top: 522px;
+    left: 465px;
+    font-size: 11px;
+}
+
+.label-Moroleon{
+	top: 584px;
+    left: 326px;
+    font-size: 10px;
+}
+
+.label-Uriangato{
+	top: 573px;
+    left: 365px;
+    font-size: 10px;
+}
+
+.label-SantiagoMaravatio{
+    top: 553px;
+    left: 399px;
+    font-size: 9px;
+}
+
+.label-Villagran{
+	top: 450px;
+    left: 400px;
+    font-size: 10px;
+}
+
+.label-Cortazar{
+    top: 480px;
+    left: 414px;
+    font-size: 11px;
+}
+
+.label-JaralDelProgreso{
+    top: 500px;
+    left: 385px;
+    font-size: 9px;
+}
+
+.label-Coroneo{
+    top: 530px;
+    left: 564px;
+    font-size: 10px;
+}
+
+.label-Tarandacuao{
+    top: 602px;
+    left: 533px;
+    font-size: 10px;
+}
+
+.label-PuebloNuevo{
+	top: 443px;
+    left: 309px;
+    font-size: 9px;
+}
+
+.label-SantaCruzDeJuventinoRosas{
+    top: 395px;
+    left: 410px;
+    font-size: 9px;
+}
+
+

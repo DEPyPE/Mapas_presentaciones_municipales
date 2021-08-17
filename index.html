@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapas estadísticos</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="Resource/css/app.css">
+    <link rel="stylesheet" href="Resource/Materialize/materialize.min.css">
+</head>
+<body>
+
+    <br>
+    <div class="row">
+        <div class="col l1"></div>
+        <div class="col l3">
+            <ul class="collection with-header">
+                <li class="collection-header"><h4>Mapas estadísticos</h4></li>
+                <li class="collection-item"><div>1. Abandono escolar MS 2019-2020<a class="secondary-content black-text"><i class="material-icons"></i></a></div></li>
+                <li class="collection-item"><div>2. Eficiencia terminal MS 2019-2020<a class="secondary-content black-text"><i class="material-icons"></i></a></div></li>
+                <li class="collection-item"><div>3. Porcentaje de viviendas particulares habitadas que disponen de radio<a class="secondary-content black-text"><i class="material-icons"></i></a></div></li>
+              </ul>
+        </div>
+        <div class="col l7">
+
+            <div class="card card-map">
+                <div class="card-content">
+                    <span class="card-title">
+                        <div class="title-map center-align"> </div>
+                    </span>
+
+                    <p class="label-SantaCruzDeJuventinoRosas1">Santa Cruz de Juventino Rosas</p>
+                    <div class="nombre-municipios">
+                        <p class="label-Abasolo">Abasolo</p>
+                        <p class="label-Acambaro">Acámbaro</p>
+                        <p class="label-ApaseoElAlto">Apaseo <br> el alto</p>
+                        <p class="label-ApaseoElGrande">Apaseo <br> el grande</p>
+                        <p class="label-Atarjea">Atarjea</p>
+                        <p class="label-Celaya">Celaya</p>
+                        <p class="label-Comonfort">Comonfort</p>
+                        <p class="label-Coroneo">Coroneo</p>
+                        <p class="label-Cortazar">Cortazar</p>
+                        <p class="label-Cueramaro">Cuerámaro</p>
+                        <p class="label-DoctorMora">Doctor Mora</p>
+                        <p class="label-DoloresHidalgo">Dolores Hidalgo Cuna <br> de la Independencia <br> Naconal</p>
+                        <p class="label-Guanajuato">Guanajuato</p>
+                        <p class="label-Huanimaro">Huanímaro</p>
+                        <p class="label-Irapuato">Irapuato</p>
+                        <p class="label-JaralDelProgreso">Jaral del <br> Progreso</p>
+                        <p class="label-Jerecuaro">Jerécuaro</p>
+                        <p class="label-Leon">León</p>
+                        <p class="label-ManuelDoblado">Manuel <br> Doblado</p>
+                        <p class="label-Moroleon">Moroleón</p>
+                        <p class="label-Ocampo">Ocampo</p>
+                        <p class="label-Penjamo">Pénjamo</p>
+                        <p class="label-PuebloNuevo">Pueblo <br> Nuevo</p>
+                        <p class="label-PurisimaDelRincon">Purísima <br> del Rincon</p>
+                        <p class="label-Romita">Romita</p>
+                        <p class="label-Salamanca">Salamanca</p>
+                        <p class="label-Salvatierra">Salvatierra</p>
+                        <p class="label-SanDiegoDeLaUnion">San Diego <br> de la Unión</p>
+                        <p class="label-SanFelipe">San Felipe</p>
+                        <p class="label-SanFrancisco">San Francisco <br> del Rincón</p>
+                        <p class="label-SanJoseIturbide">San José <br> Iturbide</p>
+                        <p class="label-SanLuisDeLaPaz">San Luis <br> de la Paz</p>
+                        <p class="label-SanMiguelDeAllende">San Miguel <br> De Allende</p>
+                        <p class="label-SantaCatarina">Santa <br> Catarina</p>
+                        <p class="label-SantaCruzDeJuventinoRosas">Santa <br> Cruz de <br> Juventino <br> Rosas</p>
+                        <p class="label-SantiagoMaravatio">Santiago <br> Maravatío</p>
+                        <p class="label-Silao">Silao</p>
+                        <p class="label-Tarandacuao">Tarandacuao</p>
+                        <p class="label-Tarimoro">Tarimoro</p>
+                        <p class="label-TierraBlanca">Tierra <br> Blanca</p>
+                        <p class="label-Uriangato">Uriangato</p>
+                        <p class="label-ValleDeSantiago">Valle de <br> Santiago</p>
+                        <p class="label-Victoria">Victoria</p>
+                        <p class="label-Villagran">Villagrán</p>
+                        <p class="label-Xichu">Xichú</p>
+                        <p class="label-Yuriria">Yuriria</p>
+                    </div>
+
+                    <p class="notas-datos">
+                        *Notas importantes sobre un dato o municipio en específico
+                    </p>
+
+                    <div id="mapa_guanajuato"></div>
+
+                </div>
+              </div>
+
+        </div>
+        <div class="col l1"></div>
+    </div>
+    
+    <!-- JQuery -->
+    <script src="Resource/jQuery/jquery-3.2.1.min.js"></script>
+
+    <!-- Materialize -->
+    <script src="Resource/Materialize/materialize.min.js"></script>
+
+    <!-- Amchart4 -->
+    <script src="https://www.amcharts.com/lib/4/core.js"></script>
+    <script src="https://www.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://www.amcharts.com/lib/4/geodata/region/mexico/guaHigh.js"></script>
+
+    <!-- Own script-->
+    <script src="Resource/js/app.js"></script>
+</body>
+</html>
