@@ -334,13 +334,13 @@
 //        chart.exporting.menu = new am4core.ExportMenu();
 
 //      Definimos los diferentes umbrales para las regiones de interés
-        var Eficiencia_Vector = Object2Vector("ViviendasConRadio");
-        var diff_max_min = ( MaxOfSet(Eficiencia_Vector) - MinOfSet(Eficiencia_Vector) )/5;
-        var threshold_1 = MinOfSet(Eficiencia_Vector).toFixed(1);
-        var threshold_2 = MinOfSet(Eficiencia_Vector) + diff_max_min;
-        var threshold_3 = MinOfSet(Eficiencia_Vector) + diff_max_min*2;
-        var threshold_4 = MinOfSet(Eficiencia_Vector) + diff_max_min*3;
-        var threshold_5 = MaxOfSet(Eficiencia_Vector).toFixed(1);
+        var ViviendasConRadio_Vector = Object2Vector("ViviendasConRadio");
+        var diff_max_min = ( MaxOfSet(ViviendasConRadio_Vector) - MinOfSet(ViviendasConRadio_Vector) )/5;
+        var threshold_1 = MinOfSet(ViviendasConRadio_Vector).toFixed(1);
+        var threshold_2 = MinOfSet(ViviendasConRadio_Vector) + diff_max_min;
+        var threshold_3 = MinOfSet(ViviendasConRadio_Vector) + diff_max_min*2;
+        var threshold_4 = MinOfSet(ViviendasConRadio_Vector) + diff_max_min*3;
+        var threshold_5 = MaxOfSet(ViviendasConRadio_Vector).toFixed(1);
 
         var sub_threshold_2 = ( parseFloat(threshold_2) + parseFloat(0.1) );
         var sub_threshold_3 = ( parseFloat(threshold_3) + parseFloat(0.1) );
@@ -359,15 +359,15 @@
         var s1_range = [], s2_range = [], s3_range = [], s4_range = [];
 
         for(var i=0; i<DataGuanajuatoStates.length; i++){
-            var Eficiencia_Data = DataGuanajuatoStates[i].EficienciaTerminalMediaSuperior;
+            var ViviendasConRadio = DataGuanajuatoStates[i].ViviendasConRadio;
 
-            if ( Eficiencia_Data >= parseFloat(threshold_1) && Eficiencia_Data <= parseFloat(threshold_2) )
+            if ( ViviendasConRadio >= parseFloat(threshold_1) && ViviendasConRadio <= parseFloat(threshold_2) )
                 s1_range.push( DataGuanajuatoStates[i].id );
-            else if ( Eficiencia_Data >= parseFloat(sub_threshold_2) && Eficiencia_Data <= parseFloat(threshold_3) )
+            else if ( ViviendasConRadio >= parseFloat(sub_threshold_2) && ViviendasConRadio <= parseFloat(threshold_3) )
                 s2_range.push( DataGuanajuatoStates[i].id );
-            else if ( Eficiencia_Data >= parseFloat(sub_threshold_3) && Eficiencia_Data <= parseFloat(threshold_4) )
+            else if ( ViviendasConRadio >= parseFloat(sub_threshold_3) && ViviendasConRadio <= parseFloat(threshold_4) )
                 s3_range.push( DataGuanajuatoStates[i].id );
-            else if ( Eficiencia_Data >= parseFloat(sub_threshold_4) && Eficiencia_Data <= parseFloat(threshold_5) )
+            else if ( ViviendasConRadio >= parseFloat(sub_threshold_4) && ViviendasConRadio <= parseFloat(threshold_5) )
                 s4_range.push( DataGuanajuatoStates[i].id );
         }
 
@@ -489,12 +489,18 @@
             $('.label-ApaseoElAlto').removeClass('black-text').addClass('white-text');
 
             Mapa_EficienciaTerminalMediaSuperior();
-        }else if ( TypeMap[0] == '3. Porcentaje de viviendas particulares habitadas que disponen de radio' ){
+        }else if ( TypeMap[0] == '3. Viviendas habitadas que disponen de radio' ){
             $('#mapa_guanajuato').empty();
-            $('.title-map').text('Nuevo mapa');
+            $('.title-map').text('Porcentaje de viviendas particulares habitadas que disponen de radio');
             $('.notas-datos').css('color', 'white');
 
-            $('.nombre-municipios').children().removeClass('white-text').addClass('black-text');
+            $('.nombre-municipios').children().removeClass('black-text').addClass('white-text');
+            $('.label-PurisimaDelRincon').removeClass('white-text').addClass('black-text');
+            $('.label-Victoria').removeClass('white-text').addClass('black-text');
+            $('.label-Xichu').removeClass('white-text').addClass('black-text');
+            $('.label-Atarjea').removeClass('white-text').addClass('black-text');
+            $('.label-SantaCatarina').removeClass('white-text').addClass('black-text');
+            $('.label-TierraBlanca').removeClass('white-text').addClass('black-text');
             
             Mapa_ViviendasConRadio();
         }
