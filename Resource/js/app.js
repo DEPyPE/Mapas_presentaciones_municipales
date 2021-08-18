@@ -1458,7 +1458,7 @@
     }
 
     $(function(){
-        $('.collection .collection-item')[12].click();
+        $('.collection .collection-item')[0].click();
     });
     
     $('.collection .collection-item').on('click', function(){
